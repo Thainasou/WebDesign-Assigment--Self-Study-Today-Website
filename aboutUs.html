@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Self-study Today</title>
+		<link href="style.css" rel="stylesheet">
+		<script src="external.js"></script>
+		
+		<!-- The google font that I'm using for titles-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap" rel="stylesheet">
+		 <!-- The google font that I'm using for the content of my page-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		
+		<!-- This is the kit for my font awesome icons that I'm using in my footer as I learned in class-->
+		<script src="https://kit.fontawesome.com/fa6f58c5c2.js" crossorigin="anonymous"></script>
+
+	</head>
+	<body onload="random()">
+		<!-- Everything on page that is not specified is by Vitor Colley-->
+		<!-- Navbar by Carlos Borges and Vitor Colley-->
+		<div class="topnav" id="myNavbar">
+		<div id="myLinks">
+			<img class="logo" src="Optimized-images/logo-min.png" alt="logo">
+			<a onmouseover="growHome()" onmouseout="backHome()" id="home" href="index.html">Home</a>
+			<a onmouseover="growHowToBegin()" onmouseout="backHowToBegin()" id="howToBegin" href="howToBegin.html">How to Begin</a>
+			<a onmouseover="growOnlineCourses()" onmouseout="backOnlineCourses()"id="onlineCourses" href="onlineCourses.html">Online Courses</a>
+			<a onmouseover="growAboutUs()" onmouseout="backAboutUs()"id="aboutUs" href="aboutUs.html">About Us</a>
+		</div>
+		    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		    <i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<br>
+		<div class="contentBodyAboutUs">
+			<div class="aboutUsContent">
+				<div class="aboutUsText" id="colorAboutUsText" onmouseover="colorAboutTxt()" onmouseout="colorBackAboutTxt()">
+					<h1>About Us:</h1>
+					<p>
+						As a group of students from NCI and independent learners ourselves, we were tasked with the creation of a website offering tips and suggestions on self-study. While it has always been present in the academic world, self-study has become more and more popular among students due to the access to information available on the internet. However, because we were not necessarily trained during our formal education to be independent learners, it can be difficult for some people to develop such skills on their own. Students often feel lost due to lack of a clear path of study or because they don’t know how to evaluate the credibility or quality of a source. Taking that in consideration, we have developed this website to aid others on this journey of self-discovery and learning autonomy.
+					</p>
+				</div>
+				<div class="aboutTeam" id="colorAboutTeamTxt" onmouseover="colorAboutTeamTxt()" onmouseout="colorBackAboutTeamTxt()">
+					<h1>Meet the Team:</h1>
+					<p class="aboutTeamTxt">
+						<img src="Optimized-images/us-min.png" alt="team"> From left to right, Carlos Borges, Thaina de Paula and Vitor Colley. The three Web Design and Development students responsible for this website project under the orientation of Professor Emer Thornbury.
+					</p>
+				</div>
+				
+				<div class="aboutNci" id="colorAboutNciTxt" onmouseover="colorAboutNciTxt()" onmouseout="colorBackAboutNciTxt()">
+				
+					<h1>About NCI:</h1>
+					<p class="aboutNciTxt">
+						<img src="Optimized-images/ncilogo.png" alt="NCI Logo"> We are bachelors of science in computing in our first year at NCI, if you want to know more about our college, <a href="https://www.ncirl.ie/about">click here</a>.
+					</p>
+				
+				</div>
+			
+		</div>
+	</div>
+	
+		<footer>
+			<!-- I used the website: https://www.codinglabweb.com/2021/05/responsive-footer-using-html-and-css.html as a reference for my footer. But I did some adptations for our website like change the display, include the logo and name of our website, and adapt the link according to our content. By: Thaina Souza de Paula  -->
+			<div class="content">
+			  <div class="top">
+				<div class="logo-details">
+				  <img class="footerlogo" src="Optimized-images/logo-min.png" alt="logo">
+				  <br>
+				  <span class="logo_namefooter">Self Study Today</span>
+				</div>
+				<!-- For the social media icons I'm using fontawesome  -->
+				<div class="media-icons">
+				  <a href="#"><i class="fab fa-facebook-f"></i></a>
+				  <a href="#"><i class="fab fa-twitter"></i></a>
+				  <a href="#"><i class="fab fa-instagram"></i></a>
+				  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+				  <a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+			  </div>
+			  <div class="link-boxes">
+				<ul class="box">
+				  <li class="link_name">Company</li>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="howToBegin.html">How to Begin</a></li>
+				  <li><a href="onlineCourses.html">Online Courses</a></li>
+				  <li><a href="aboutUs.html">About Us</a></li>
+				</ul>
+			  
+					<ul class="box">
+					  <li class="link_name">Online Courses</li>
+					  <li><a href="https://www.sebrae.com.br/">Sebrae</a></li>
+					  <li><a href="https://www.udemy.com/">Udemy</a></li>
+					  <li><a href="https://www.coursera.org/">Coursera</a></li>
+					  <li><a href="https://www.ev.org.br/">Bradesco</a></li>
+					  <li><a href="https://www.duolingo.com/">Duolingo</a></li>
+					  <li><a href="https://www.funbrain.com/">Funbrain</a></li>
+					  <li><a href="https://www.edx.org/">Edx</a></li>
+					</ul>
+			  
+					
+
+				<ul class="box input-box">
+				  <li class="link_name">Subscribe</li>
+				  <li><input type="text" placeholder="Enter your email"></li>
+				  <li><input type="button" value="Subscribe"></li>
+				</ul>
+			  </div>
+			</div>
+			<div class="bottom-details">
+			  <div class="bottom_text">
+				<span class="copyright_text">Copyright &#169; 2022 <a href="#"> SelfStudyToday </a> All rights reserved</span>
+				<span class="policy_terms">
+				  <a href="#">Privacy policy</a>
+				  <a href="#">Terms & condition</a>
+				</span>
+			  </div>
+			</div>
+		</footer>
+	</body>
+</html>

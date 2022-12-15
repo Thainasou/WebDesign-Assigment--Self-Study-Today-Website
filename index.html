@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Self-study Today</title>
+		<link href="style.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script src="external.js"></script>
+		
+		<!-- The google font that we're using for titles-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap" rel="stylesheet">
+		 <!-- The google font that we're using for the content of our page-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		
+		<!-- This is the kit for my font awesome icons that we're using in the footer as we learned in class-->
+		<script src="https://kit.fontawesome.com/fa6f58c5c2.js" crossorigin="anonymous"></script>
+		
+	</head>
+	<body onload="random()">
+		<!-- Everything on page that is not specified was done by Vitor Colley-->
+		<!-- Navbar by Carlos Borges and Vitor Colley-->
+		<div class="topnav" id="myNavbar" >
+			<div id="myLinks">
+			<img class="logo" src="Optimized-images/logo-min.png" alt="logo">
+			<a onmouseover="growHome()" onmouseout="backHome()" id="home" href="index.html">Home</a>
+			<a onmouseover="growHowToBegin()" onmouseout="backHowToBegin()" id="howToBegin" href="howToBegin.html">How to Begin</a>
+			<a onmouseover="growOnlineCourses()" onmouseout="backOnlineCourses() "id="onlineCourses" href="onlineCourses.html">Online Courses</a>
+			<a onmouseover="growAboutUs()" onmouseout="backAboutUs() "id="aboutUs" href="aboutUs.html">About Us</a>
+		</div>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+         </a>
+		</div>
+		<div class="contentBody">
+			<div class="welcome">
+				<div class="welcomeText" onmouseover="growWelcome()" onmouseout="backWelcome()" id="welcomeTextId">
+					<p>
+					Welcome to self-study today. A place where you can get tips and ideas on how to begin and carry out self-studying.
+					</p>
+				</div>
+			</div>
+			<!-- Game by Vitor Colley-->
+			<!-- Content based on "Einstein's Riddle"-->
+			<div class="challengeGame">
+				<div class="intro">
+					<h1>New to our website? Here are a few quick tips around:</h1>
+					<ol>
+						<li>Do you want to warm up your brain? Try out our minigame.</li>
+						<li>First time studying online? Just go to <a href="howtobegin.html">how to begin</a> for some starting tips.</li>
+						<li>Already an independent learner looking for some websites to explore? Go to <a href="onlineCourses.html">online courses</a> and check out our recommendations.</li>
+						<li>Want to learn more about us and this project? Check out our page <a href="aboutUs.html">here</a>.</li>				
+					</ol>
+				</div>
+				<div class="challengeContainer">
+				<div class="gameHeading">
+					<h1>Start learning logic with this minigame:</h1>
+				</div>
+					<div class="challengeOptions">
+						<form id="verify">
+							<!-- First Column -->
+							<div class="column">					
+								<ul class="bPs">
+									<li>House #1</li>
+									<!-- color -->
+									<li >
+										<select id="color1" name="color">
+											<option value="blank">color</option>
+											<option value="blue">blue</option>
+											<option value="green">green</option>
+											<option value="red">red</option>
+											<option value="white">white</option>
+											<option value="yellow">yellow</option>
+										</select>
+									</li>
+									<!-- Nationality -->
+									<li>
+										<select id="nationality1" name="nationality">
+											<option value="nationality">nationality</option>
+											<option value="british">british</option>
+											<option value="dane">dane</option>
+											<option value="german">german</option>
+											<option value="norwegian">norwegian</option>
+											<option value="swede">swede</option>
+										</select>
+									</li>
+									<!-- Drink -->
+									<li>
+										<select id="drink1" name="drink">
+											<option value="blank">drink</option>
+											<option value="beer">beer</option>
+											<option value="coffee">coffee</option>
+											<option value="milk">milk</option>
+											<option value="tea">tea</option>
+											<option value="water">water</option>
+										</select>
+									</li>
+									<!-- Cigarrete -->
+									<li>
+										<select id="cigarrete1" name="cigarrete">
+											<option value="blank">cigarrete</option>
+											<option value="blends">blends</option>
+											<option value="bluemaster">bluemaster</option>
+											<option value="dunhill">dunhill</option>
+											<option value="palmall">palmall</option>
+											<option value="prince">prince</option>
+										</select>
+									</li>
+									<!-- Pet -->
+									<li>
+										<select id="pet1" name="pet">
+											<option value="blank">pet</option>
+											<option value="birds">birds</option>
+											<option value="cats">cats</option>
+											<option value="dogs">dogs</option>
+											<option value="horses">horses</option>
+											<option value="fish">fish</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+							<!-- Second Column -->
+							<div class="column">					
+								<ul class="bPs">
+									<li>House #2</li>
+									<!-- color -->
+									<li >
+										<select id="color2" name="color">
+											<option value="blank">color</option>
+											<option value="blue">blue</option>
+											<option value="green">green</option>
+											<option value="red">red</option>
+											<option value="white">white</option>
+											<option value="yellow">yellow</option>
+										</select>
+									</li>
+									<!-- Nationality -->
+									<li>
+										<select id="nationality2" name="nationality">
+											<option value="nationality">nationality</option>
+											<option value="british">british</option>
+											<option value="dane">dane</option>
+											<option value="german">german</option>
+											<option value="norwegian">norwegian</option>
+											<option value="swede">swede</option>
+										</select>
+									</li>
+									<!-- Drink -->
+									<li>
+										<select id="drink2" name="drink">
+											<option value="blank">drink</option>
+											<option value="beer">beer</option>
+											<option value="coffee">coffee</option>
+											<option value="milk">milk</option>
+											<option value="tea">tea</option>
+											<option value="water">water</option>
+										</select>
+									</li>
+									<!-- Cigarrete -->
+									<li>
+										<select id="cigarrete2" name="cigarrete">
+											<option value="blank">cigarrete</option>
+											<option value="blends">blends</option>
+											<option value="bluemaster">bluemaster</option>
+											<option value="dunhill">dunhill</option>
+											<option value="palmall">palmall</option>
+											<option value="prince">prince</option>
+										</select>
+									</li>
+									<!-- Pet -->
+									<li>
+										<select id="pet2" name="pet">
+											<option value="blank">pet</option>
+											<option value="birds">birds</option>
+											<option value="cats">cats</option>
+											<option value="dogs">dogs</option>
+											<option value="horses">horses</option>
+											<option value="fish">fish</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+							<!-- Third Column -->
+							<div class="column">					
+								<ul class="bPs">
+									<li>House #3</li>
+									<!-- color -->
+									<li >
+										<select id="color3" name="color">
+											<option value="blank">color</option>
+											<option value="blue">blue</option>
+											<option value="green">green</option>
+											<option value="red">red</option>
+											<option value="white">white</option>
+											<option value="yellow">yellow</option>
+										</select>
+									</li>
+									<!-- Nationality -->
+									<li>
+										<select id="nationality3" name="nationality">
+											<option value="nationality">nationality</option>
+											<option value="british">british</option>
+											<option value="dane">dane</option>
+											<option value="german">german</option>
+											<option value="norwegian">norwegian</option>
+											<option value="swede">swede</option>
+										</select>
+									</li>
+									<!-- Drink -->
+									<li>
+										<select id="drink3" name="drink">
+											<option value="blank">drink</option>
+											<option value="beer">beer</option>
+											<option value="coffee">coffee</option>
+											<option value="milk">milk</option>
+											<option value="tea">tea</option>
+											<option value="water">water</option>
+										</select>
+									</li>
+									<!-- Cigarrete -->
+									<li>
+										<select id="cigarrete3" name="cigarrete">
+											<option value="blank">cigarrete</option>
+											<option value="blends">blends</option>
+											<option value="bluemaster">bluemaster</option>
+											<option value="dunhill">dunhill</option>
+											<option value="palmall">palmall</option>
+											<option value="prince">prince</option>
+										</select>
+									</li>
+									<!-- Pet -->
+									<li>
+										<select id="pet3" name="pet">
+											<option value="blank">pet</option>
+											<option value="birds">birds</option>
+											<option value="cats">cats</option>
+											<option value="dogs">dogs</option>
+											<option value="horses">horses</option>
+											<option value="fish">fish</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+							<!-- Fourth Column -->
+							<div class="column">					
+								<ul class="bPs">
+									<li>House #4</li>
+									<!-- color -->
+									<li >
+										<select id="color4" name="color">
+											<option value="blank">color</option>
+											<option value="blue">blue</option>
+											<option value="green">green</option>
+											<option value="red">red</option>
+											<option value="white">white</option>
+											<option value="yellow">yellow</option>
+										</select>
+									</li>
+									<!-- Nationality -->
+									<li>
+										<select id="nationality4" name="nationality">
+											<option value="nationality">nationality</option>
+											<option value="british">british</option>
+											<option value="dane">dane</option>
+											<option value="german">german</option>
+											<option value="norwegian">norwegian</option>
+											<option value="swede">swede</option>
+										</select>
+									</li>
+									<!-- Drink -->
+									<li>
+										<select id="drink4" name="drink">
+											<option value="blank">drink</option>
+											<option value="beer">beer</option>
+											<option value="coffee">coffee</option>
+											<option value="milk">milk</option>
+											<option value="tea">tea</option>
+											<option value="water">water</option>
+										</select>
+									</li>
+									<!-- Cigarrete -->
+									<li>
+										<select id="cigarrete4" name="cigarrete">
+											<option value="blank">cigarrete</option>
+											<option value="blends">blends</option>
+											<option value="bluemaster">bluemaster</option>
+											<option value="dunhill">dunhill</option>
+											<option value="palmall">palmall</option>
+											<option value="prince">prince</option>
+										</select>
+									</li>
+									<!-- Pet -->
+									<li>
+										<select id="pet4" name="pet">
+											<option value="blank">pet</option>
+											<option value="birds">birds</option>
+											<option value="cats">cats</option>
+											<option value="dogs">dogs</option>
+											<option value="horses">horses</option>
+											<option value="fish">fish</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+							<!-- Fifth Column -->
+							<div class="column">					
+								<ul class="bPs">
+									<li>House #5</li>
+									<!-- color -->
+									<li >
+										<select id="color5" name="color">
+											<option value="blank">color</option>
+											<option value="blue">blue</option>
+											<option value="green">green</option>
+											<option value="red">red</option>
+											<option value="white">white</option>
+											<option value="yellow">yellow</option>
+										</select>
+									</li>
+									<!-- Nationality -->
+									<li>
+										<select id="nationality5" name="nationality">
+											<option value="nationality">nationality</option>
+											<option value="british">british</option>
+											<option value="dane">dane</option>
+											<option value="german">german</option>
+											<option value="norwegian">norwegian</option>
+											<option value="swede">swede</option>
+										</select>
+									</li>
+									<!-- Drink -->
+									<li>
+										<select id="drink5" name="drink">
+											<option value="blank">drink</option>
+											<option value="beer">beer</option>
+											<option value="coffee">coffee</option>
+											<option value="milk">milk</option>
+											<option value="tea">tea</option>
+											<option value="water">water</option>
+										</select>
+									</li>
+									<!-- Cigarrete -->
+									<li>
+										<select id="cigarrete5" name="cigarrete">
+											<option value="blank">cigarrete</option>
+											<option value="blends">blends</option>
+											<option value="bluemaster">bluemaster</option>
+											<option value="dunhill">dunhill</option>
+											<option value="palmall">palmall</option>
+											<option value="prince">prince</option>
+										</select>
+									</li>
+									<!-- Pet -->
+									<li>
+										<select id="pet5" name="pet">
+											<option value="blank">pet</option>
+											<option value="birds">birds</option>
+											<option value="cats">cats</option>
+											<option value="dogs">dogs</option>
+											<option value="horses">horses</option>
+											<option value="fish">fish</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				<div class="challengeContainer2">
+					<div class="challengeClues">
+						<ul id="clues" class="bPs">
+							<li>
+							The Brit lives in the Red house.
+							</li>
+							<li>
+							The Swede keeps Dogs as pets.
+							</li>
+							<li>
+							The Dane drinks Tea.
+							</li>
+							<li>
+							The Green house is exactly to the left of the White house.
+							</li>
+							<li>
+							The owner of the Green house drinks Coffee.
+							</li>
+							<li>
+							The person who smokes Pall Mall rears Birds.
+							</li>
+							<li>
+							The owner of the Yellow house smokes Dunhill.
+							</li>
+							<li>
+							The man living in the centre house drinks Milk.
+							</li>
+							<li>
+							The Norwegian lives in the first house.
+							</li>
+							<li>
+							The man who smokes Blends lives next to the one who keeps Cats.
+							</li>
+							<li>
+							The man who keeps Horses lives next to the man who smokes Dunhill.
+							</li>
+							<li>
+							The man who smokes Blue Master drinks Beer.
+							</li>
+							<li>
+							The German smokes Prince.
+							</li>
+							<li>
+							The Norwegian lives next to the Blue house.
+							</li>
+							<li>
+							The man who smokes Blends has a neighbour who drinks Water.
+							</li>
+						</ul>
+					</div>
+						<!--
+						I got the idea for preventing the page from reloading when pressing submit at:
+						https://www.codexpedia.com/javascript/submitting-html-form-without-reload-the-page/
+						-->
+					<div class="buttonContainer">
+							<button class="gameSubmit" onclick="verify();return false">Check Answers</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<!-- I used the website: https://www.codinglabweb.com/2021/05/responsive-footer-using-html-and-css.html as a reference for my footer. But I did some adptations for our website like change the display, include the logo and name of our website, and adapt the link according to our content. By: Thaina Souza de Paula  -->
+			<div class="content">
+			  <div class="top">
+				<div class="logo-details">
+				  <img class="footerlogo" src="Optimized-images/logo-min.png" alt="logo">
+				  <br>
+				  <span class="logo_namefooter">Self Study Today</span>
+				</div>
+				<!-- For the social media icons I'm using fontawesome  -->
+				<div class="media-icons">
+				  <a href="#"><i class="fab fa-facebook-f"></i></a>
+				  <a href="#"><i class="fab fa-twitter"></i></a>
+				  <a href="#"><i class="fab fa-instagram"></i></a>
+				  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+				  <a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+			  </div>
+			  <div class="link-boxes">
+				<ul class="box">
+				  <li class="link_name">Company</li>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="howToBegin.html">How to Begin</a></li>
+				  <li><a href="onlineCourses.html">Online Courses</a></li>
+				  <li><a href="aboutUs.html">About Us</a></li>
+				</ul>
+			  
+					<ul class="box">
+					  <li class="link_name">Online Courses</li>
+					  <li><a href="https://www.sebrae.com.br/">Sebrae</a></li>
+					  <li><a href="https://www.udemy.com/">Udemy</a></li>
+					  <li><a href="https://www.coursera.org/">Coursera</a></li>
+					  <li><a href="https://www.ev.org.br/">Bradesco</a></li>
+					  <li><a href="https://www.duolingo.com/">Duolingo</a></li>
+					  <li><a href="https://www.funbrain.com/">Funbrain</a></li>
+					  <li><a href="https://www.edx.org/">Edx</a></li>
+					</ul>
+			  
+
+				<ul class="box input-box">
+				  <li class="link_name">Subscribe</li>
+				  <li><input type="text" placeholder="Enter your email"></li>
+				  <li><input type="button" value="Subscribe"></li>
+				</ul>
+			  </div>
+			</div>
+			<div class="bottom-details">
+			  <div class="bottom_text">
+				<span class="copyright_text">Copyright &#169; 2022 <a href="#"> SelfStudyToday </a> All rights reserved</span>
+				<span class="policy_terms">
+				  <a href="#">Privacy policy</a>
+				  <a href="#">Terms & condition</a>
+				</span>
+			  </div>
+			</div>
+		</footer>
+	</body>
+</html>

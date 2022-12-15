@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="HowToBeginHead">
+    <meta charset="UTF-8">
+    <!-- The Edge mode tells the Internet Explorer to display content in the highest mode available-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The viewport will allow the page to be responsive for mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- The google font that I'm using for titles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap" rel="stylesheet">
+     <!-- The google font that I'm using for the content of my page-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+    <title>How to Begin </title>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="external.js"></script>
+    <!-- This is the kit for my font awesome icons that I'm using in my footer as I learned in class-->
+    <script src="https://kit.fontawesome.com/fa6f58c5c2.js" crossorigin="anonymous"></script>
+    
+    
+    
+</head>
+<body class="bodyHowToBegin">
+    <!-- Navbar by Carlos Borges and Vitor Colley-->
+    <div class="topnav"  id="myNavbar">
+    <div id="myLinks">
+		<img class="logo" src="Optimized-images/logo-min.png" alt="logo">
+		<a onmouseover="growHome()" onmouseout="backHome()" id="home" href="index.html">Home</a>
+		<a onmouseover="growHowToBegin()" onmouseout="backHowToBegin()" id="howToBegin" href="howToBegin.html">How to Begin</a>
+		<a onmouseover="growOnlineCourses()" onmouseout="backOnlineCourses() "id="onlineCourses" href="onlineCourses.html">Online Courses</a>
+		<a onmouseover="growAboutUs()" onmouseout="backAboutUs() "id="aboutUs" href="aboutUs.html">About Us</a>
+	  </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
+  	</div>
+
+    <h1 class="howToBeginHeader"> How to Begin </h1>
+				
+   <div class="howToBeginBlock1">
+    <!-- The main content of my page are the four types of learnes, the purpose of this page is to make the users understand more about what type of learners they are so they use better the website and the tips for online studies. As reference for this content I used the website: https://www.rasmussen.edu/degrees/education/blog/types-of-learning-styles/-->
+     
+
+  <p> What are the four learning styles?
+
+    The four core learning styles in the VARK model include visual, auditory, reading and writing, and kinesthetic. Here's an overview of all four learning style types.
+    <br> 
+     <!-- The class for the images at the main page allows me to resize it usind CSS and make the text float around each image-->
+   <img class="howToBeginImg" alt = "visual" src="Optimized-images/visual-min.jpg"> <p id="visualtext" >Visual --> Visual learners are better able to retain information when it's presented to them in a graphic depiction, such as arrows, charts, diagrams, symbols, and more. Similar to how designers use visual hierarchy to emphasise specific design elements, visual learners thrive with clear pictures of information hierarchy.
+   <br>
+   How to cater to visual learners: The whiteboard or smartboard is your best friend when teaching these types of learners. Give students opportunities to draw pictures and diagrams on the board, or ask students to doodle examples based on the topic they’re learning. Teachers catering to visual learners should regularly make handouts and use presentations. Visual learners may also need more time to process material, as they observe the visual cues before them. So be sure to give students a little time and space to absorb the information. </p>
+
+    <br>
+    <!-- I also decided to creat an id for each type of learner so in each block of text I could use DOM manipulation to change the text color using mouseover-->
+    <img class="howToBeginImg" alt = "auditory" src="Optimized-images/auditory-min.jpg"> <p id="auditorytext">--> Auditory - Sometimes referred to as “aural” learners, auditory learners prefer listening to information that is presented to them vocally. These learners work well in group settings where vocal collaboration is present and may enjoy reading aloud to themselves, too.
+    <br>
+    How to cater to auditory learners: Since these students generally find it hard to stay quiet for long periods of time, get your auditory learners involved in the lecture by asking them to repeat new concepts back to you. Ask questions and let them answer. Invoke group discussions so your auditory and verbal processors can properly take in and understand the information they’re being presented with. Watching videos and using music or audiotapes are also helpful ways of learning for this group.</p>
+
+    <br>
+    <img class="howToBeginImg" alt = "writting" src="Optimized-images/writting-min.jpeg"> <p id="writtingtext"> --> Reading & Writing - Focusing on the written word, reading and writing learners succeed with written information on worksheets, presentations, and other text-heavy resources. These learners are note-takers and perform strongly when they can reference written text.
+    <br>
+    How to cater to reading/writing learners: Of the four learning styles, this is probably the easiest to cater to since much of the traditional educational system tends to center on writing essays, doing research and reading books. Be mindful about allowing plenty of time for these students to absorb information through the written word, and give them opportunities to get their ideas out on paper as well.</p>
+    <br>
+
+    <img class="howToBeginImg" alt = "hands" src="Optimized-images/hands-min.jpg"><p id="kinesthetictext"> --> Kinesthetic - Taking a physically active role, kinesthetic learners are hands-on and thrive when engaging all of their senses during course work. These learners tend to work well in scientific studies due to the hands-on lab component of the course.
+
+    <br>
+    How to cater to kinesthetic learners: The best way teachers can help these students learn is by getting them moving. Instruct students to act out a certain scene from a book or a lesson you’re teaching. Also try encouraging these students by incorporating movement into lessons: pacing to help memorize, learning games that involve moving around the classroom or having students write on the whiteboard as part of an activity.
+
+    Once kinesthetic learners can physically sense what they’re studying, abstract ideas and difficult concepts become easier to understand.</p>
+
+
+    </div>
+
+<!-- My form will allow the user to input the name, email, phone number and also according to the content of my website allow the user to, after reading the content choose what type of learner are they. I basically did the form doing researchs in the W3 Schools website. -->
+<div id="howToBeginForm">
+    <div class="containerHowToBeginForm">
+        <div class="containerhtbForm">
+            <h2 class=" howtoBeginh2"> Subscribe today to recieve a personalized content for your online studies! </h2>
+            <form onsubmit="validate()" action="howToBegin.html">
+          
+              <label for="name"> Enter your Name:</label>
+              <input type="text" id="name" name="firstname" placeholder="Your name.." >
+          
+              <label for="email">Enter your e-mail:</label>
+              <input type="text" id="email" name="email" placeholder="Your last e-mail..">
+
+              <label for="age">Enter your age:</label>
+              <input type="number" id="age" name="age" placeholder="Enter your age...">
+                
+                <p> What type of learner are you ?</p>
+              
+                <input type="radio" id="visual" name="visual learner" value="I'm a visual learner">
+                <label for="visual">I'm a visual learner</label><br>
+                <input type="radio" id="auditory" name="auditory" value="I'm an aduditory learner">
+                <label for="auditory">I'm an auditory learner</label><br>
+                <input type="radio" id="readingwritting" name="reading&writting" value="I'm an Reading & Writing learner">
+                <label for="readingwritting">I'm a Reading & Writing learner</label><br>
+                <input type="radio" id="kinesthetic" name="kinesthetic" value="I'm an Kinesthetic learner">
+                <label for="kinesthetic">I'm a Kinesthetic learner</label>
+                <br>
+                <br>
+              <input type="submit" value="Submit" >
+        
+            </form>
+          </div>
+     </div>
+</div> 
+<footer>
+  <!-- I used the website: https://www.codinglabweb.com/2021/05/responsive-footer-using-html-and-css.html as a reference for my footer. But I did some adptations for our website like change the display, include the logo and name of our website, and adapt the link according to our content. By: Thaina Souza de Paula  -->
+  <div class="content">
+    <div class="top">
+    <div class="logo-details">
+      <img class="footerlogo" src="Optimized-images/logo-min.png" alt="logo">
+      <br>
+      <span class="logo_namefooter">Self Study Today</span>
+    </div>
+    <!-- For the social media icons I'm using fontawesome  -->
+    <div class="media-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    </div>
+    <div class="link-boxes">
+    <ul class="box">
+      <li class="link_name">Company</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="howToBegin.html">How to Begin</a></li>
+      <li><a href="onlineCourses.html">Online Courses</a></li>
+      <li><a href="aboutUs.html">About Us</a></li>
+    </ul>
+    
+      <ul class="box">
+        <li class="link_name">Online Courses</li>
+        <li><a href="https://www.sebrae.com.br/">Sebrae</a></li>
+        <li><a href="https://www.udemy.com/">Udemy</a></li>
+        <li><a href="https://www.coursera.org/">Coursera</a></li>
+        <li><a href="https://www.ev.org.br/">Bradesco</a></li>
+        <li><a href="https://www.duolingo.com/">Duolingo</a></li>
+        <li><a href="https://www.funbrain.com/">Funbrain</a></li>
+        <li><a href="https://www.edx.org/">Edx</a></li>
+      </ul>
+    
+      
+
+    <ul class="box input-box">
+      <li class="link_name">Subscribe</li>
+      <li><input type="text" placeholder="Enter your email"></li>
+      <li><input type="button" value="Subscribe"></li>
+    </ul>
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+    <span class="copyright_text">Copyright &#169; 2022 <a href="#"> SelfStudyToday </a> All rights reserved</span>
+    <span class="policy_terms">
+      <a href="#">Privacy policy</a>
+      <a href="#">Terms & condition</a>
+    </span>
+    </div>
+  </div>
+</footer>
+    
+    
+</body>
+</html>

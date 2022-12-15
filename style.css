@@ -1,0 +1,1197 @@
+body{
+	background-image: url("Optimized-images/background-min.png");
+	background-size:cover;
+	background-position:center;
+}
+/* We're using the font family from Google fonts for the headers content - Magra */
+h1{
+    font-family: 'Magra', sans-serif;
+}
+/* We're using the font family from Google fonts for the main content - Robot */
+p{
+    font-family: 'Roboto', sans-serif;
+}
+/* Style the top navigation bar - Carlos Borges and Vitor Colley */
+.logo{
+	padding:20px;
+	float: left;
+	height:15%;
+	width:15%;
+}
+.topnav .icon {
+  display: none;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #06283D;
+	font-size: 20px;
+  }
+ /* Style the topnav links */
+ .topnav a {
+  float: left;
+  display: block;
+  color: #DFF6FF;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  margin-top:30px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: #DFF6FF;
+}
+/* Nav bar for Mobile made by Carlos and i used  that link form w3 schools as a reference because after we deploy the website the nav bar was not working https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav*/
+/* Carlos used for make the Nav bar responsive */
+/* When the user open in a mobile phone the Nav bar do not show some links just the logo and Home */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0px;
+    top: 0;
+
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+   /* HOME - Vitor Colley */
+/* Main page (home) content*/
+.contentBody{
+	height:1500px;
+}
+.welcome{
+	margin-top:0;
+	height:400px;
+	background-image: url("Optimized-images/formbackground-min.jpg");
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+.welcomeText{
+	padding-top: 80px;
+	margin-left: 500px;
+	width:1000px;
+	text-align: center;
+	font-size:38px;
+	color:#DFF6FF;
+}
+.welcomeText a{
+	font-size:38px;
+	color:#06283D;
+	text-decoration: none;
+}
+.intro{
+	float:left;
+	background-color: #06283D;
+	color: #DFF6FF;
+	border: solid white 3px;
+	margin-top:60px;
+	padding:50px;
+	width:400px;
+	font-size:20px;
+	margin-left:50px;
+}
+.intro h1{
+	color: #DFF6FF;
+	font-size:30px;
+
+}
+.intro a{
+	color: #DFF6FF;
+
+}
+.gameHeading{
+	border: solid white 3px;
+	text-align: center;
+	font-size: 15px;
+	border: solid white 3px;
+	text-align: center;
+	color: #DFF6FF;
+	background-color: #06283D;
+	width:640px;
+	margin-bottom:20px;
+}
+
+/* Game */
+.challengeGame{
+	height: 100px;
+}
+/* Game Options */
+.challengeContainer{
+	margin-left:600px;
+	padding-top: 100px;
+}
+.challengeOptions{
+	color: #DFF6FF;
+}
+.column{
+	padding:15px;
+	background-color: #06283D;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: solid white 3px;
+	text-align: center;
+	font-size: 20px;
+
+}
+/* removes bullet points */
+ul.bPs{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+select{
+	width:100%;
+}
+/* Game Clues */
+.challengeContainer2{
+	margin-left:600px;
+	padding-top: 100px;
+	margin-top:50px;
+	margin-top:250px;
+}
+.challengeClues{
+	width:635px;
+	margin-top:50px;
+	background-color: #06283D;
+	color: #DFF6FF;
+	border: solid #DFF6FF 3px;
+	font-size: 20px;
+	padding: 20px;
+
+}
+.buttonContainer{
+	margin-top:25px;
+	padding:14px 16px;
+}
+.gameSubmit{
+	color:#DFF6FF;
+	background-color:#06283D;
+	border:solid #DFF6FF 3px;
+	font-size:20px;
+}
+/* Page online Courses Made by Carlos */
+.containerOnline {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.headerOnline {
+  padding: 30px;
+  text-align: center;
+  background: #06283D;
+  color: #DFF6FF;
+  font-family: 'Magra', sans-serif;
+  font-size: 30px;
+  background-image: url(Optimized-images/formbackground-min.jpg);
+}
+/* card */
+.cardOnline {
+    width: 300px;
+    height: 450px;
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+}
+/* Card Header */
+.cardHead {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+/* size of the bradesco image */
+.bradescoImage{
+  min-height: auto;
+  width: 300px;
+  height: 180px;
+}
+
+/* Text inside the main card */
+.cardTex2 {
+    font-size: 14px;
+    margin: 20px 0;
+    text-align: center;
+}
+/* title of the cards */
+.cardTex1 {
+    font-size: 32px;
+    margin: 15px 0;
+    text-align: center;
+}
+/* Footer of the cards */
+.cardFooter {
+    margin-top: 55px;
+    text-align: center;
+    background-color: black;
+}
+.cardFooter a {
+    color: white;
+    display:block;
+    padding: 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+
+}
+.cardOnline:hover {
+    transform: scale3d(1.1, 1.1, 1);
+}
+.cardImge1 {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 205px;
+    min-height: auto;
+
+
+}
+.card-Text {
+
+    text-align: center;
+
+}
+.section {
+  padding: 30px;
+  text-align: center;
+  background: #06283D;
+  color: #DFF6FF;
+  font-size: 30px;
+  font-family: 'Magra', sans-serif;
+  background-image: url(Optimized-images/formbackground-min.jpg);
+}
+
+/* Create equal columns that floats next to each other */
+.columndif {
+  float:inline-start;
+  width: 33,3%;
+  padding: 20px;
+  margin: 15px;
+  background-color: #DFF6FF;
+}
+
+
+.header3 {
+  width: auto;
+  text-align: justify;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+  text-align: center;
+  color: #DFF6FF;
+  background-color: #06283D;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Hide text */
+#myAva , #myJulicameron , #myMiros , #myOlad {
+  display: none;
+}
+
+.canva , .oladimeji , .miroshnichenko , .julia {
+  height: 300px;
+  width: 300px;
+  margin: 0px;
+  margin-top: 0px;
+}
+
+.columnRow4 {
+	float: left;
+  width: 25%;
+  padding: 0 40px;
+}
+/* Remove extra left and right margins, due to padding in columns */
+.rowAll {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.rowAll:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.containerAll{
+	width: 300px;
+	height: 50px;
+	align-items: center;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .columnRow4 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* The codes used are based on the contents we had in the classroom */
+/* Page online Courses Made by Carlos */
+
+	/* ABOUT US - Vitor Colley*/
+
+.contentBodyAboutUs{
+	height:900px;
+}
+.aboutUsText{
+	background-color: #06283D;
+	color: #DFF6FF;
+	border: solid white 3px;
+	margin-top:60px;
+	padding:40px;
+	height:400px;
+	font-size:22px;
+	margin-left:50px;
+	margin-right:50px;
+}
+.aboutTeam{
+	float:left;
+	background-color: #06283D;
+	color: #DFF6FF;
+	border: solid white 3px;
+	margin-top:60px;
+	padding:40px;
+	width:800px;
+	height:400px;
+	font-size:16px;
+	margin-left:50px;
+	margin-right:50px;
+}
+.aboutTeam img{
+	float:left;
+	width:50%;
+	height:50%;
+	margin-right:5px;
+}
+.aboutTeamTxt{
+	float:left;
+	font-size:25px;
+}
+
+
+.aboutNci{
+  float: left;
+	background-color: #06283D;
+	color: #DFF6FF;
+	border: solid white 3px;
+	margin-top:10px;
+	padding:40px;
+	width:400px;
+	height:400px;
+	font-size:18px;
+	margin-right:5px;
+	margin-top: 70px;
+}
+  
+  
+.aboutNci img{
+	float:left;
+	margin-right:5px;
+  width: 100px;
+}
+.aboutNci a{
+	color:#DFF6FF;
+}
+.aboutNciTxt{
+	float:left;
+	font-size:25px;
+}
+@media(max-width: 520px) or (max-width: 700px)or (max-width: 900px) {
+
+	/* TOPNAV */
+.logo{
+	padding:20px;
+	float: left;
+	height:15%;
+	width:15%;
+}
+.topnav .icon {
+  display: none;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #06283D;
+	  font-size: 20px;
+  }
+ /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #DFF6FF;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+	  margin-top:30px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .topnav a.active {
+  background-color: #04AA6D;
+  color: #DFF6FF;
+}
+/* Nav bar for Mobile made by Carlos and i used  that link form w3 schools as a reference because after we deploy the website the nav bar was not working https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav*/
+/* I used for make the Nav bar responsive */
+/* When the user open in a mobile phone the Nav bar do not show some links just the logo and Home */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0px;
+    top: 0;
+
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+	/*HOME*/
+.contentBody{
+	height:2500px;
+}
+ .welcome{
+	margin-top:0;
+	height:200px;
+	width:100%;
+	background-image: url("Optimized-images/formbackground-min.jpg");
+	background-size:cover;
+	background-position:center;
+	display:flex;
+	align-items:center;
+}
+.welcomeText{
+	padding-top: 4px;
+	margin-left:0px;
+	text-align: center;
+	font-size:18px;
+	color:#DFF6FF;
+}
+.intro{
+	float: none;
+	background-color: #06283D;
+	color: #DFF6FF;
+	border: solid white 3px;
+	margin-top:60px;
+	padding:50px;
+	width:100%;
+	font-size:20px;
+	margin-left:0px;
+}
+.intro h1{
+	color: #DFF6FF;
+	font-size:30px;
+
+}
+.intro a{
+	color: #DFF6FF;
+
+}
+.gameHeading{
+	border: solid white 3px;
+	text-align: center;
+	font-size: 10px;
+	border: solid white 3px;
+	text-align: center;
+	color: #DFF6FF;
+	background-color: #06283D;
+	width:100%;
+	margin-bottom:20px;
+}
+
+/* Game */
+.challengeGame{
+	height: 100px;
+}
+/* Game Options */
+.challengeContainer{
+	margin-left:0px;
+	padding-top: 100px;
+}
+.challengeOptions{
+	color: #DFF6FF;
+	width:100%;
+}
+.column{
+	background-color: #06283D;
+	float: left;
+	padding: 20px;
+	border: solid white 3px;
+	text-align: center;
+	font-size: 18px;
+
+}
+/* removes bullet points */
+ul.bPs{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+select{
+	width:100%;
+}
+/* Game Clues */
+.challengeContainer2{
+	float:none;
+	margin-left:0px;
+	padding-top: 550px;
+	margin-top:250px;
+}
+.challengeClues{
+	width:100%;
+	margin-top:50px;
+	background-color: #06283D;
+	color: #DFF6FF;
+	border: solid #DFF6FF 3px;
+	font-size: 18px;
+	padding: 5px;
+
+}
+.buttonContainer{
+	margin-top:25px;
+	padding:14px 16px;
+}
+.gameSubmit{
+	color:#DFF6FF;
+	background-color:#06283D;
+	border:solid #DFF6FF 3px;
+	font-size:20px;
+}
+
+	/* ABOUT US */
+.contentBodyAboutUs{
+	height:1500px;	
+}
+.aboutUsText{
+	background-color: #06283D;
+	color: #DFF6FF;
+	border: solid white 3px;
+	padding:25px;
+	width:100%;
+	height:500px;
+	font-size:18px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+}
+.aboutTeam{
+	float:none;
+	background-color: #06283D;
+	color: #DFF6FF;
+	border: solid white 3px;
+	margin-top:10px;
+	padding:50px;
+	width:100%;
+	height:400px;
+	font-size:18px;
+	margin-left:0px;
+	margin-right:0px;
+}
+.aboutTeam img{
+	float:left;
+	width:50%;
+	height:50%;
+	margin-right:5px;
+}
+.aboutTeamTxt{
+	float:left;
+	font-size:18px;
+}
+.aboutNci{
+	float: none;
+	background-color: #06283D;
+	color: #DFF6FF;
+	border: solid white 3px;
+	margin-top:10px;
+	padding:50px;
+	width:100%;
+	height:400px;
+	font-size:18px;
+	margin-right:0px;
+}
+.aboutNci img{
+	float:left;
+	margin-right:5px;
+	width:35%;
+	height:35%;
+}
+.aboutNci a{
+	color:#DFF6FF;
+}
+.aboutNciTxt{
+	float:left;
+	font-size:20px;
+
+}
+}
+
+/*HOW TO BEGIN PAGE - by: Thaina Souza de Paula */
+/*To demosntrate use of file paths all images are inside the images folder like the background image that I'm using. At first I select my folder than I choose the image*/
+.bodyHowToBegin{
+    background-image: url("Optimized-images/background-min.png");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.howToBeginHeader{
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-top: 30px;
+	padding-top:20px;
+    background-image: url("Optimized-images/formbackground-min.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    font-family: 'Magra', sans-serif;
+    float: center;
+	
+}
+/* The block to style the main content box of my page. I'm usign float to put my main content box in the centralized in the webpage */
+.howToBeginBlock1{
+      height: 80%;
+      background-color:#DFF6FF;
+      justify-content: center;
+      padding: 30px;
+      padding-top: 30px;
+      padding-left: 30px;
+      border: #333;
+      border-style: solid;
+      float: center;
+      margin: auto;
+
+}
+
+/* The h2 is basically the title of my form. I'm usign Google fonts "Magra" for the titles */
+.howToBeginh2{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  float: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Magra', sans-serif;
+  padding: 30px;
+
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px; /* Some padding */
+    border: 1px solid black; /* Black border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box;
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  /* Style the submit button */
+  input[type=submit] {
+    color: white;
+    background-color: #0468aa;
+    padding: 12px 20px;
+    border: white;
+    border-style: solid;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* When moving the mouse over the submit button, add a darker blue color */
+  input[type=submit]:hover {
+    background-color: #142dcd;
+  }
+
+  /* I Added a background image to my form according to the website style */
+
+  .containerhtbForm {
+    padding-top: 50px;
+    border-radius: 5px;
+    border: black;
+    border-style: solid;
+    background-image: url("Optimized-images/formbackground-min.jpg");
+    padding: 20px;
+    width: 60%;
+    float: center;
+    margin: 40px;
+    align-items: center;
+    margin-left: 400px;
+    color: white;
+  }
+   /* Using the class that I created in html I can let all images at the same size and I added some border. */
+
+  .howToBeginImg{
+    width: 100px;
+    height: 100px;
+    float: left; /* The float left was important to let the text float around my images */
+    margin: 10px;
+    object-fit: cover;
+    border: black;
+    border-style: solid;
+  }
+
+/* FOOTER */
+  footer{
+
+    background: #06283D;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    border: #0F0844;
+    border-style: solid;
+    margin-top: 40px;
+  }
+
+  footer .content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+  }
+  footer .content .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .content .top .logo-details{
+    color: #fff;
+    font-size: 30px;
+  }
+  .content .top .media-icons{
+    display: flex;
+  }
+  /* Styles of media icons  */
+  .content .top .media-icons a{
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+  /* It will select the first element of the div top and the div media-icons  */
+  .top .media-icons a:nth-child(1){
+    background: #4267B2;
+  }
+  /* It will select the first element of the div top and the div media-icons. It will also use the hover selector to make the background white when the mouse is over */
+  .top .media-icons a:nth-child(1):hover{
+    color: #4267B2;
+    background: #fff;
+  }
+  /* It will select the second element of the div top and the div media-icons  */
+  .top .media-icons a:nth-child(2){
+    background: #1DA1F2;
+  }
+  /* It will select the second element of the div top and the div media-icons. It will also use the hover selector to make the background white when the mouse is over */
+  .top .media-icons a:nth-child(2):hover{
+    color: #1DA1F2;
+    background: #fff;
+  }
+  /* It will select the third element of the div top and the div media-icons  */
+  .top .media-icons a:nth-child(3){
+    background: #E1306C;
+  }
+  /* It will select the third element of the div top and the div media-icons. It will also use the hover selector to make the background white when the mouse is over */
+  .top .media-icons a:nth-child(3):hover{
+    color: #E1306C;
+    background: #fff;
+  }
+  /* It will select the fourth element of the div top and the div media-icons  */
+  .top .media-icons a:nth-child(4){
+    background: #0077B5;
+  }
+  /* It will select the fourth element of the div top and the div media-icons. It will also use the hover selector to make the background white when the mouse is over */
+  .top .media-icons a:nth-child(4):hover{
+    color: #0077B5;
+    background: #fff;
+  }
+  /* It will select the fifth element of the div top and the div media-icons  */
+  .top .media-icons a:nth-child(5){
+    background: #FF0000;
+  }
+  /* It will select the fifth element of the div top and the div media-icons. It will also use the hover selector to make the background white when the mouse is over */
+  .top .media-icons a:nth-child(5):hover{
+    color: #FF0000;
+    background: #fff;
+  }
+
+  footer .content .link-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 5 - 10px);
+  }
+  .content .link-boxes .box .link_name{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .link-boxes .box .link_name::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 35px;
+    background: #fff;
+  }
+  .content .link-boxes .box li{
+    margin: 6px 0;
+    list-style: none;
+  }
+  .content .link-boxes .box li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.4s ease
+  }
+  .content .link-boxes .box li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .content .link-boxes .input-box{
+    margin-right: 55px;
+  }
+  .link-boxes .input-box input{
+    height: 40px;
+    width: calc(100% + 55px);
+    outline: none;
+    border: 2px solid #AFAFB6;
+    background: #06283D;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .link-boxes .input-box input::placeholder{
+    color: #AFAFB6;
+    font-size: 16px;
+  }
+  .link-boxes .input-box input[type="button"]{
+    background: #fff;
+    color: #06283D;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .input-box input[type="button"]:hover{
+    opacity: 1;
+  }
+  footer .bottom-details{
+    width: 100%;
+    background: #06283D;
+  }
+  footer .bottom-details .bottom_text{
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+  .bottom-details .bottom_text a:hover{
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .bottom-details .bottom_text a{
+    margin-right: 10px;
+  }
+
+  /* @media to make the footer responsive for screens with maximum width 900px */
+  @media (max-width: 900px) {
+    footer .content .link-boxes{
+      flex-wrap: wrap;
+    }
+    footer .content .link-boxes .input-box{
+      width: 40%;
+      margin-top: 10px;
+    }
+  }
+  /* @media to make the footer responsive for screens with maximum width 700px */
+  @media (max-width: 700px){
+    footer{
+      position: relative;
+    }
+    .content .top .logo-details{
+      font-size: 26px;
+    }
+    .content .top .media-icons a{
+      height: 35px;
+      width: 35px;
+      font-size: 14px;
+      line-height: 35px;
+    }
+    footer .content .link-boxes .box{
+      width: calc(100% / 3 - 10px);
+    }
+    footer .content .link-boxes .input-box{
+      width: 60%;
+    }
+    .bottom-details .bottom_text span,
+    .bottom-details .bottom_text a{
+      font-size: 12px;
+    }
+    .containerhtbForm {
+        padding-top: 50px;
+        border-radius: 5px;
+        border: black;
+        border-style: solid;
+        background-image: url(Optimized-images/formbackground-min.jpg);
+        padding: 20px;
+        width: 60%;
+        float: center;
+        margin: 40px;
+        align-items: center;
+        color: white;
+        font-size: 11px;
+  }
+}
+  /* @media to make the footer responsive for screens with maximum width 520px */
+  @media (max-width: 520px){
+    footer::before{
+      top: 145px;
+    }
+    footer .content .top{
+      flex-direction: column;
+    }
+    .content .top .media-icons{
+      margin-top: 16px;
+    }
+    footer .content .link-boxes .box{
+      width: calc(100% / 2 - 10px);
+    }
+    footer .content .link-boxes .input-box{
+      width: 100%;
+    }
+    .containerhtbForm {
+        padding-top: 50px;
+        border-radius: 5px;
+        border: black;
+        border-style: solid;
+        background-image: url(Optimized-images/formbackground-min.jpg);
+        padding: 20px;
+        width: 60%;
+        float: center;
+        margin: 40px;
+        align-items: center;
+        color: white;
+        font-size: 11px;
+    }
+
+    
+        .aboutNci{
+          float: left;
+          background-color: #06283D;
+          color: #DFF6FF;
+          border: solid white 3px;
+          margin-top:10px;
+          padding:50px;
+          width:400px;
+          height:400px;
+          font-size:18px;
+          margin-right:5px;
+        }
+        .aboutNci img{
+          float:left;
+          margin-right:5px;
+          width:50%;
+          height:50%;
+        }
+        .aboutNci a{
+          color:#DFF6FF;
+        }
+        .aboutNciTxt{
+          float:left;
+          font-size:20px;
+        
+        }
+        .contentBody{
+          height:1500px;
+        }
+        .welcome{
+          margin-top:0;
+          height:400px;
+          background-image: url("Optimized-images/formbackground-min.jpg");
+          background-size:cover;
+          background-position:center;
+          background-repeat: no-repeat;
+        }
+        .welcomeText{
+          padding-top: 80px;
+          margin-left: 150px;
+          width:1000px;
+          text-align: center;
+          font-size:38px;
+          color:#DFF6FF;
+        }
+        .welcomeText a{
+          font-size:38px;
+          color:#06283D;
+          text-decoration: none;
+        }
+        .intro{
+          float:left;
+          background-color: #06283D;
+          color: #DFF6FF;
+          border: solid white 3px;
+          margin-top:60px;
+          padding:50px;
+          width:400px;
+          font-size:20px;
+          margin-left:50px;
+        }
+        .intro h1{
+          color: #DFF6FF;
+          font-size:30px;
+        
+        }
+        .intro a{
+          color: #DFF6FF;
+        
+        }
+        .gameHeading{
+          border: solid white 3px;
+          text-align: center;
+          font-size: 15px;
+          border: solid white 3px;
+          text-align: center;
+          color: #DFF6FF;
+          background-color: #06283D;
+          width:640px;
+          margin-bottom:20px;
+        }
+        
+        /* Game */
+        .challengeGame{
+          height: 100px;
+        }
+        /* Game Options */
+        .challengeContainer{
+          margin-left:600px;
+          padding-top: 100px;
+        }
+        .challengeOptions{
+          color: #DFF6FF;
+        }
+        .column{
+          background-color: #06283D;
+          float: left;
+          padding-left: 15px;
+          padding-right: 15px;
+          border: solid white 3px;
+          text-align: center;
+          font-size: 20px;
+        
+        }
+        /* removes bullet points */
+        ul.bPs{
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+        select{
+          width:100%;
+        }
+        /* Game Clues */
+        .challengeContainer2{
+          margin-left:600px;
+          padding-top: 100px;
+          margin-top:50px;
+          margin-top:250px;
+        }
+        .challengeClues{
+          width:635px;
+          margin-top:50px;
+          background-color: #06283D;
+          color: #DFF6FF;
+          border: solid #DFF6FF 3px;
+          font-size: 20px;
+          padding: 20px;
+        
+        }
+        .buttonContainer{
+          margin-top:25px;
+          padding:14px 16px;
+        }
+        .gameSubmit{
+          color:#DFF6FF;
+          background-color:#06283D;
+          border:solid #DFF6FF 3px;
+          font-size:20px;
+        }
+      }
+      
+    
+
+   /* To styles the footer logo and make it fits inside the footer I used object-fit and changed the width and height */
+  .footerlogo{
+    width: 200px;
+    height: 100px;
+    float: left;
+    object-fit: contain;
+  }
+  .logo_namefooter{
+    margin: 0px;
+    float: center;
+
+  }
